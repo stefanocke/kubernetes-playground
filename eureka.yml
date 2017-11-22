@@ -36,5 +36,9 @@ spec:
         env:
         - name: EUREKA_CLIENT_SERVICEURL_DEFAULTZONE
           value: http://eureka-0.eureka/eureka,http://eureka-1.eureka/eureka
+        - name: EUREKA_CLIENT_REGISTERWITHEUREKA
+          value: true
+        - name: EUREKA_CLIENT_FETCHREGISTRY
+          value: true
   # No need to start the pods in order. We just need the stable network identity
   podManagementPolicy: "Parallel"
