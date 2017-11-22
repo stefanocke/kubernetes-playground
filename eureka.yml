@@ -34,11 +34,11 @@ spec:
         ports:
         - containerPort: 8761
         env:
-        - name: EUREKA_CLIENT_SERVICEURL_DEFAULT-ZONE
-          value: http://eureka-0.eureka/eureka,http://eureka-1.eureka/eureka
-        - name: EUREKA_CLIENT_REGISTER-WITH-EUREKA
+        - name: EUREKA_CLIENT_SERVICEURL_DEFAULT_ZONE
+          value: http://eureka-0.eureka:8761/eureka,http://eureka-1.eureka:8761/eureka
+        - name: EUREKA_CLIENT_REGISTERWITHEUREKA
           value: "true"
-        - name: EUREKA_CLIENT_FETCH-REGISTRY
+        - name: EUREKA_CLIENT_FETCHREGISTRY
           value: "true"
         - name: EUREKA_INSTANCE_HOSTNAME
           value: ${spring.cloud.client.ipAddress}
