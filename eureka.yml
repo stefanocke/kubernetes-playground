@@ -34,7 +34,11 @@ spec:
         ports:
         - containerPort: 8761
         env:
-        - name: EUREKA_CLIENT_SERVICEURL_DEFAULT_ZONE
+        - name: EUREKA_CLIENT_REGION
+          value: default
+        - name: EUREKA_CLIENT_AVAILABILITYZONES_DEFAULT
+          value: default
+        - name: EUREKA_CLIENT_SERVICEURL_DEFAULT
           value: http://eureka-0.eureka:8761/eureka,http://eureka-1.eureka:8761/eureka
         - name: EUREKA_CLIENT_REGISTERWITHEUREKA
           value: "true"
