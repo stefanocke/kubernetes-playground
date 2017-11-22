@@ -46,5 +46,6 @@ spec:
           value: "true"
         - name: EUREKA_INSTANCE_HOSTNAME
           value: ${spring.cloud.client.ipAddress}
+        - name: EUREKA_INSTANCE_METADATAMAP_ZONE = default
   # No need to start the pods in order. We just need the stable network identity
   podManagementPolicy: "Parallel"
