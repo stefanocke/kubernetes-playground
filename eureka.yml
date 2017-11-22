@@ -34,8 +34,8 @@ spec:
         ports:
         - containerPort: 8761
         env:
-        - name: LOGGING_LEVEL_COM_NETFLIX_DISCOVERY
-          value: DEBUG
+        - name: _JAVA_OPTIONS
+          value: -Dlogging.level.com.netflix.discovery=DEBUG
         - name: EUREKA_CLIENT_REGION
           value: default
         - name: EUREKA_CLIENT_AVAILABILITYZONES_DEFAULT
