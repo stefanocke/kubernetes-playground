@@ -41,8 +41,6 @@ spec:
         - name: EUREKA_CLIENT_FETCHREGISTRY
           value: "true"
         - name: EUREKA_INSTANCE_HOSTNAME
-          valueFrom:
-            fieldRef:
-              fieldPath: spec.hostname
+          value: ""
   # No need to start the pods in order. We just need the stable network identity
   podManagementPolicy: "Parallel"
