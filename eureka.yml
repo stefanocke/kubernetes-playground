@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
       - name: eureka
-        image: devopsfolks/spring-eureka-server-microservice
+        image: springcloud/eureka
         ports:
         - containerPort: 8761
         env:
