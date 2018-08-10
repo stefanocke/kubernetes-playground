@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
       - name: eureka
-        image: springcloud/eureka
+        image: stoc/eureka
         ports:
         - containerPort: 8761
         env:
